@@ -1,6 +1,6 @@
 body {
   background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/ceb3b1eb-2673-4dd9-a6e3-0cd7a5e130ee/a6118ae2-a8b0-4356-bc8e-42882d9ba5c3/US-en-20230522-popsignuptwoweeks-perspective_alpha_website_large.jpg');
-
+  /* filter: blur(5px); */
 }
 
 .navContainer {
@@ -27,6 +27,7 @@ body {
   color: white;
   cursor: pointer;
 }
+
 .signin:hover {
   opacity: 0.8;
 }
@@ -54,16 +55,19 @@ body {
 }
 
 .searchTxt {
-/* padding-top: 5px; */
+  /* padding-top: 5px; */
   width: 376px;
-  height: 47px;
+  height: 56px;
   background-color: rgb(24, 19, 19);
   color: white;
+  font-size: 12px;
+  /* padding-top: 12px; */
+  border-color: gray;
 }
 
 .search {
   /* padding: 12px 24px; */
- 
+
   width: 185px;
   height: 56px;
   background-color: #e50914;
@@ -71,15 +75,48 @@ body {
   font-size: 22px;
   font-weight: bold;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   cursor: pointer;
 }
+
 .search:hover {
   opacity: 0.8;
 }
+
 .searchBox {
   width: 586px;
-  height: 76px;
+  height: 56px;
   margin-left: 175px;
-  
+}
+
+/* .imageContainer {
+  display: flex;
+  height: 692px;
+  border: 2px solid green;
+  /* margin: 32px;
+  justify-content: space-between; */
+} */
+
+
+.imageSection {
+  display: flex;
+  height: 792px;
+  border: 2px solid black;
+  margin: 32px;
+  justify-content: space-between;
+}
+
+.rowOne,
+.rowTwo {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid blue;
+  margin: 25px;
+  height: 280px;
+}
+
+.pic {
+  border: solid red;
+  margin: 35px;
+  width: 50%;
 }
